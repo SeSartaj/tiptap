@@ -16,7 +16,7 @@ declare module '@tiptap/core' {
   }
 }
 
-export const inputRegex = /^(\d+)\.\s$/
+export const inputRegex = /^((\\p{N})+)\.\s$/
 
 export const OrderedList = Node.create<OrderedListOptions>({
   name: 'orderedList',
